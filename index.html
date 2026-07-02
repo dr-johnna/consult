@@ -328,6 +328,53 @@
       margin: 0;
     }
 
+    /* TESTIMONIALS */
+    .testimonials-section {
+      padding: 100px 48px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .testimonial-card {
+      background: var(--cream);
+      border: 1px solid rgba(32,32,32,0.12);
+      border-radius: 4px;
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-quote {
+      font-family: var(--serif);
+      font-size: 22px;
+      line-height: 1.4;
+      color: var(--dark);
+      margin-bottom: 24px;
+    }
+
+    .testimonial-name {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-top: auto;
+    }
+
+    .testimonial-role {
+      font-size: 14px;
+      color: rgba(32,32,32,0.55);
+      margin-top: 4px;
+    }
+
     /* RESERVE */
     .reserve-section {
       background: var(--dark);
@@ -561,6 +608,8 @@
       .details-section { padding: 60px 24px; }
       .details-grid, .details-grid.four { grid-template-columns: 1fr; gap: 28px; }
       .value-section { padding: 72px 24px; }
+      .testimonials-section { padding: 72px 24px; }
+      .testimonials-grid { grid-template-columns: 1fr; }
       .reserve-section { padding: 72px 24px; }
       .reserve-card { padding: 36px 28px; }
       .form-section { padding: 72px 24px; }
@@ -741,6 +790,41 @@
   <section class="value-section">
     <div class="divider"></div>
     <h2 class="value-heading">You're not paying for 90 minutes. You're paying to stop <em>losing months to the same question.</em></h2>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <p class="options-label">In Their Words</p>
+    <div class="divider"></div>
+    <h2 class="options-heading">What women say after we <em>work together</em></h2>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"I finally feel like I have words to describe everything that's been inside of me."</p>
+        <p class="testimonial-name">Dr. Tammy</p>
+        <p class="testimonial-role">Transformation coach</p>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"I loved the AI Identity work I did with Dr. Johnna. Very well done. It brought me clarity and helped me break through in my marketing."</p>
+        <p class="testimonial-name">Katie</p>
+        <p class="testimonial-role">Business consultant</p>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Your masterplan for initiating business through the lens of psychology has been such a gift, bringing clarity and focus."</p>
+        <p class="testimonial-name">Christina</p>
+        <p class="testimonial-role">Neurotherapy practitioner</p>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Working with Dr. Johnna, I've gained much more insight into growing my business than I ever expected."</p>
+        <p class="testimonial-name">Christine</p>
+        <p class="testimonial-role">Photography business owner</p>
+      </div>
+
+    </div>
   </section>
 
   <!-- RESERVE -->
